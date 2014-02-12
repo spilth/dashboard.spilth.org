@@ -8,5 +8,5 @@ SCHEDULER.every '6h', :first_in => 0 do |job|
   sunrise = sun_time.sunrise.localtime.strftime "%l:%M %p"
   sunset = sun_time.sunset.localtime.strftime "%l:%M %p"
 
-  send_event('sunrise', items: [{label: "Sunrise", value: sunrise}, {label: "Sunset", value: sunset}])
+  send_event('sunrise', {sunrise: sunrise, sunset: sunset})
 end

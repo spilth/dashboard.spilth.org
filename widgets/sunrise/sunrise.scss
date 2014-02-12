@@ -1,16 +1,36 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #18cb6e;
+$background-color:  #ec663c;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 // ----------------------------------------------------------------------------
-// Widget-clock styles
+// Widget-text styles
 // ----------------------------------------------------------------------------
-.widget-clock {
+.widget-sunrise {
 
   background-color: $background-color;
 
+  .title {
+    color: $title-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   h2 {
-    font-size: 128px;
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 56px;
+    font-weight: bold;
   }
 }
